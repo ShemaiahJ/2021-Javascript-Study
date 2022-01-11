@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnClick</title>
+
     <script type="text/javascript">
-function turnBlue(){
-     document.getElementById("example").style.color = "blue";
-      document.getElementById("example").style.backgroundcolor = "blue";
-      document.getElementById("example").style.display = "italics";
-}
+    function turnBlue(){
+        document.getElementById("example").style.color = "blue";
+        document.getElementById("example").style.backgroundColor = "blue";
+    }
+
     </script>
-  </head>
-  <body>
+</head>
+<body>
+<button type="buton" onClick="turnBlue()">Blue</button>
+<div id="example">Stick some text inside of it</div>
 
-<button type="button" onClick="turnBlue()">Blue</button>
-<div id="example">NOD</div>
-
-  </body>
+</body>
 </html>
