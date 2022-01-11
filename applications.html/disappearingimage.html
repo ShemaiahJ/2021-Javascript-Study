@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing images</title>
+ <script type="text/javascript">
+   function byebye(){
+    var img = document.getElementById("city");
+    image.style.display = "none";
+    var surpriseImage = document.getElementById("surprise");
+    surpriseImage.style.display = "block";
+   }
+ </script>
+  </head>
+  <body>
+    <button type="button" onClick="byebye()">click for surprise</button>
+    <img id="city" src="RE.jpg">
+    <img id="surprise" src="RE9.jpg" style="display:none">
+  </body>
+</html>
