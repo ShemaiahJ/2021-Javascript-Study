@@ -12,10 +12,55 @@
       var output = document.getElementById('output');
 
       //calculate sum
-      var product = parseFloat(num1.value) * parseFloat(num2.value);
+      var quotient = parseFloat(num1.value) / parseFloat(num2.value)
+
+
+      // output result
+
+      output.innerHTML = quotient;
+    }
+    function subtract() {
+      //declare HTML elements as variables
+      var num1 = document.getElementById('num1');
+      var num2 = document.getElementById('num2');
+      var output = document.getElementById('output');
+
+      //calculate sum
+      var difference = parseFloat(num1.value) - parseFloat(num2.value)
+
+
+      // output result
+
+      output.innerHTML = difference;
+    }
+    function add() {
+      //declare HTML elements as variables
+      var num1 = document.getElementById('num1');
+      var num2 = document.getElementById('num2');
+      var output = document.getElementById('output');
+
+      //calculate sum
+      var sum = parseFloat(num1.value) + parseFloat(num2.value)
+
+
       // output result
 
       output.innerHTML = sum;
+    }
+
+    function multiply() {
+      //declare HTML elements as variables
+      var num1 = document.getElementById('num1');
+      var num2 = document.getElementById('num2');
+      var output = document.getElementById('output');
+
+      //calculate sum
+
+      var product = parseFloat(num1.value) * parseFloat(num2.value);
+
+      // output result
+
+      output.innerHTML = product;
     }
   </script>
 </head>
@@ -23,6 +68,9 @@
 <body>
   First Number<input type="text" name="num1" id="num1"><br />
   Second Number<input type="text" name="num2" id="num2"><br />
+  <button name="add" onClick="add()">Multiply the Number</button>
+  <button name="subtract" onClick="subtract()">Multiply the Number</button>
+  <button name="divide" onClick="divide()">Multiply the Number</button>
   <button name="multiply" onClick="multiply()">Multiply the Number</button>
   <div id="output">Answer will appear here.</div>
 </body>
